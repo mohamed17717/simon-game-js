@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Simon Game</title>
+
+
+	<link href="https://fonts.googleapis.com/css?family=Oswald&effect=emboss" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+
+	<audio id="clip1">
+		<source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3">
+	</audio>
+	<audio id="clip2">
+		<source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3">
+	</audio>
+
+	<audio id="clip3">
+		<source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3">
+	</audio>
+
+	<audio id="clip4">
+		<source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3">
+	</audio>
+</head>
+
+<body>
+	<main>
+		<div class="outer-circle">
+			<div class="top">
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+
+			<div class="bottom">
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+			<div class="inner-circle">
+				<h1 class="font-effect-emboss">SIMON!</h1>
+				<div class="btns">
+					<div class="power">
+						<input type="checkbox" id="power">
+						<label for="power">POWER</label>
+					</div>
+					<button class="start">Start</button>
+					<div class="strict">
+						<input type="checkbox" id="strict">
+						<label for="strict">STRICT</label>
+					</div>
+				</div>
+				<div id="counter"></div>
+				<label for="counter">COUNT</label>
+				
+			</div>
+		</div>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
